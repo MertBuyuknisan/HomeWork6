@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/anaSayfaFragment">
+
+    <fragment
+        android:id="@+id/anaSayfaFragment"
+        android:name="com.mertbuyuknisan.homework6.ui.AnaSayfaFragment"
+        android:label="fragment_ana_sayfa"
+        tools:layout="@layout/fragment_ana_sayfa" >
+        <action
+            android:id="@+id/anasayfatoOyunDetay"
+            app:destination="@id/oyunDetayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/oyunDetayFragment"
+        android:name="com.mertbuyuknisan.homework6.ui.OyunDetayFragment"
+        android:label="fragment_oyun_detay"
+        tools:layout="@layout/fragment_oyun_detay" />
+    <fragment
+        android:id="@+id/uygulamalarFragment"
+        android:name="com.mertbuyuknisan.homework6.ui.UygulamalarFragment"
+        android:label="fragment_uygulamalar"
+        tools:layout="@layout/fragment_uygulamalar" />
+    <fragment
+        android:id="@+id/uygulamaDetayFragment"
+        android:name="com.mertbuyuknisan.homework6.ui.UygulamaDetayFragment"
+        android:label="fragment_uygulama_detay"
+        tools:layout="@layout/fragment_uygulama_detay" />
+</navigation>
